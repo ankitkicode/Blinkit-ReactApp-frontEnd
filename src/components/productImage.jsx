@@ -22,7 +22,7 @@ function ProductImage() {
 return (
     <div className='w-full h-auto flex flex-wrap py-[1%] px-[3%] gap-2'>
       {images.map((imageUrl, index) => (
-        <div key={index} className='h-[170px]'>
+        <div key={index} className='h-[170px] max-[600px]:h-[120px]'>
           <img className='h-full' src={imageUrl} alt={`Image ${index}`} />
         </div>
       ))}

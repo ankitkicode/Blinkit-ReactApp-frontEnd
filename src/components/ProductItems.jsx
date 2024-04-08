@@ -66,12 +66,12 @@ function ProductItems() {
   return (
     <div className='w-full h-auto px-[3%]  pb-7 relative'>
       <div className="top py-[5px] flex items-center justify-between">
-        <h2 className='text-[1.5rem] font-bold'>Dairy, Bread & Eggs</h2>
-        <span className='text-[20px] text-green-600 font-semibold'>see all</span>
+        <h2 className='text-[1.5rem] font-bold max-[600px]:text-[.9rem]'>Dairy, Bread & Eggs</h2>
+        <span className='text-[20px] text-green-600 font-semibold max-[600px]:text-[15px]'>see all</span>
       </div>
-      <div className='whitespace-nowrap overflow-y-hidden overflow-x-auto flex gap-4 mt-3'>
+      <div className='whitespace-nowrap w-full overflow-y-hidden overflow-x-auto flex  gap-4 mt-3'>
         {products.map((product, index) => (
-          <div key={index} className="product h-auto w-[15vw]">
+          <div key={index} className="product h-auto w-auto ">
             <div className="flex w-full flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
               <a className="relative mx-2 mt-2 flex h-40  w-[30vh] overflow-hidden rounded-xl" href="#">
                 <img className="peer absolute top-0 right-0 h-full w-full object-cover" src={product.imageUrl} alt="product image" />

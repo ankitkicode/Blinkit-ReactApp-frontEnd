@@ -8,6 +8,8 @@ import ProductItems from './components/ProductItems'
 const App = () => {
   return (
     <>
+    <div className='overflow-x-hidden'>
+
     <Navbar/>
     <HeaderImage/>
     <ImageContainers/>
@@ -16,6 +18,7 @@ const App = () => {
     <ProductItems />
     <ProductItems />
    
+    </div>
     </>
   )
 }
